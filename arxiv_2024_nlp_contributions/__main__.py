@@ -1,4 +1,4 @@
-"""Entry point for ukp_project_template."""
+"""Entry point for arxiv_2024_nlp_contributions."""
 
 from .cli import main  # pragma: no cover
 

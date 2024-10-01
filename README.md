@@ -1,25 +1,21 @@
-<p  align="center">
-  <img src='logo.png' width='200'>
-</p>
+# The Nature of NLP: Analyzing Contributions in NLP Papers
 
-# arxiv_2024_nlp_contributions
-[![Arxiv](https://img.shields.io/badge/Arxiv-YYMM.NNNNN-red?style=flat-square&logo=arxiv&logoColor=white)](https://put-here-your-paper.com)
-[![License](https://img.shields.io/github/license/UKPLab/arxiv-2024-nlp-contributions)](https://opensource.org/licenses/Apache-2.0)
+[![Arxiv](https://img.shields.io/badge/Arxiv-YYMM.NNNNN-red?style=flat&logo=arxiv&logoColor=white)](https://put-here-your-paper.com)
+[![License](https://img.shields.io/github/license/UKPLab/ukp-project-template)](https://opensource.org/licenses/Apache-2.0)
 [![Python Versions](https://img.shields.io/badge/Python-3.9-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
-[![CI](https://github.com/UKPLab/arxiv-2024-nlp-contributions/actions/workflows/main.yml/badge.svg)](https://github.com/UKPLab/arxiv-2024-nlp-contributions/actions/workflows/main.yml)
 
-This is the official template for new Python projects at UKP Lab. It was adapted for the needs of UKP Lab from the excellent [python-project-template](https://github.com/rochacbruno/python-project-template/) by [rochacbruno](https://github.com/rochacbruno).
+This repository includes all necessary code and data to reproduce the experiments detailed in the paper [The Nature of NLP: Analyzing Contributions in NLP Papers](). We release the code under an __Apache 2.0__ license and the dataset under a __CC-BY-SA-4.0__ license. 
 
-It should help you start your project and give you continuous status updates on the development through [GitHub Actions](https://docs.github.com/en/actions).
+Contact person: [Aniket Pramanick](mailto:aniket.pramanick@tu-darmstadt.de) 
 
-> **Abstract:** The study of natural language processing (NLP) has gained increasing importance in recent years, with applications ranging from machine translation to sentiment analysis. Properly managing Python projects in this domain is of paramount importance to ensure reproducibility and facilitate collaboration. The template provides a structured starting point for projects and offers continuous status updates on development through GitHub Actions. Key features include a basic setup.py file for installation, packaging, and distribution, documentation structure using mkdocs, testing structure using pytest, code linting with pylint, and entry points for executing the program with basic CLI argument parsing. Additionally, the template incorporates continuous integration using GitHub Actions with jobs to check, lint, and test the project, ensuring robustness and reliability throughout the development process.
+[UKP Lab](https://www.ukp.tu-darmstadt.de/) | [TU Darmstadt](https://www.tu-darmstadt.de/)
 
-Contact person: [Federico Tiblias](mailto:federico.tiblias@tu-darmstadt.de) 
+The entire pre-processed __ACL Events__ dataset from __ACLAnthology__ will soon be available on [TUdatalib]().
 
-[UKP Lab](https://www.ukp.tu-darmstadt.de/) | [TU Darmstadt](https://www.tu-darmstadt.de/
-)
+Don't hesitate to send us an e-mail or report an issue if something is broken (and it shouldn't be) or if you have further questions.
 
-Don't hesitate to send us an e-mail or report an issue, if something is broken (and it shouldn't be) or if you have further questions.
+## Abstract
+> Natural Language Processing (NLP) is a dynamic, interdisciplinary field that integrates intellectual traditions from computer science, linguistics, social science, and more. Despite its established presence, the definition of what constitutes NLP research remains debated. In this work, we quantitatively investigate what constitutes NLP by examining research papers. For this purpose, we propose a taxonomy and introduce _NLPContributions_, a dataset of nearly $2k$ research paper abstracts, expertly annotated to identify scientific contributions and classify their types according to this taxonomy. We also propose a novel task to automatically identify these elements, for which we train a strong baseline on our dataset. We present experimental results from this task and apply our model to $\sim29k$ NLP research papers to analyze their contributions, aiding in the understanding of the nature of NLP research. Our findings reveal a rising involvement of machine learning in NLP since the early nineties, alongside a declining focus on adding knowledge about language or people; again, in post-2020, there has been a resurgence of focus on language and people. We hope this work will spark discussions on our community norms and inspire efforts to consciously shape the future.
 
 
 ## Getting Started

@@ -1,0 +1,26 @@
+{
+      "id": "P96-1048",
+      "title": "Using Textual Clues to Improve Metaphor Processing",
+      "abstract": "In this paper, we propose a textual clue approach to help metaphor detection, in order to improve the semantic processing of this figure. The previous works in the domain studied the semantic regularities only, overlooking an obvious set of regularities. A corpus-based analysis shows the existence of surface regularities related to metaphors. These clues can be characterized by syntactic structures and lexical markers. We present an object oriented model for representing the textual clues that were found. This representation is designed to help the choice of a semantic processing, in terms of possible non-literal meanings. A prototype implementing this model is currently under development, within an incremental approach allowing step-by-step evaluations.",
+      "url": "https://aclanthology.org/P96-1048",
+      "year": "1996",
+      "venue": "34th Annual Meeting of the Association for Computational Linguistics",
+      "authors": [
+            "Ferrari, Stephane"
+      ],
+      "annotations": {
+            "artifact_task": [],
+            "artifact_method": [
+                  "In this paper, we propose a textual clue approach to help metaphor detection, in order to improve the semantic processing of this figure.",
+                  "We present an object oriented model for representing the textual clues that were found."
+            ],
+            "knowledge_people": [],
+            "knowledge_dataset": [
+                  "A corpus-based analysis shows the existence of surface regularities related to metaphors."
+            ],
+            "knowledge_language": [],
+            "artifact_dataset": [],
+            "knowledge_task": [],
+            "knowledge_ml": []
+      }
+}

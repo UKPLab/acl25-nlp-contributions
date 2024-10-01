@@ -1,0 +1,31 @@
+{
+      "id": "2023.acl-long.892",
+      "title": "Evaluate {AMR} Graph Similarity via Self-supervised Learning",
+      "abstract": "In work on AMR (Abstract Meaning Representation), similarity metrics are crucial as they are used to evaluate AMR systems such as AMR parsers. Current AMR metrics are all based on nodes or triples matching without considering the entire structures of AMR graphs. To address this problem, and inspired by learned similarity evaluation on plain text, we propose AMRSim, an automatic AMR graph similarity evaluation metric. To overcome the high cost of collecting human-annotated data, AMRSim automatically generates silver AMR graphs and utilizes self-supervised learning methods. We evaluated AMRSim on various datasets and found that AMRSim significantly improves the correlations with human semantic scores and remains robust under diverse challenges. We also discuss how AMRSim can be extended to multilingual cases.",
+      "url": "https://aclanthology.org/2023.acl-long.892",
+      "year": "2023",
+      "venue": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "authors": [
+            "Shou, Ziyi",
+            "Lin, Fangzhen"
+      ],
+      "annotations": {
+            "artifact_task": [],
+            "artifact_method": [
+                  "To address this problem, and inspired by learned similarity evaluation on plain text, we propose AMRSim, an automatic AMR graph similarity evaluation metric."
+            ],
+            "knowledge_people": [],
+            "knowledge_dataset": [
+                  "To overcome the high cost of collecting human-annotated data, AMRSim automatically generates silver AMR graphs and utilizes self-supervised learning methods."
+            ],
+            "knowledge_language": [],
+            "artifact_dataset": [],
+            "knowledge_task": [
+                  "In work on AMR (Abstract Meaning Representation), similarity metrics are crucial as they are used to evaluate AMR systems such as AMR parsers."        
+            ],
+            "knowledge_ml": [
+                  "Current AMR metrics are all based on nodes or triples matching without considering the entire structures of AMR graphs.",
+                  "We evaluated AMRSim on various datasets and found that AMRSim significantly improves the correlations with human semantic scores and remains robust under diverse challenges."
+            ]
+      }
+}

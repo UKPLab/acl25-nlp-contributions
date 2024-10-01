@@ -1,10 +1,12 @@
 # The Nature of NLP: Analyzing Contributions in NLP Papers
 
-[![Arxiv](https://img.shields.io/badge/Arxiv-YYMM.NNNNN-red?style=flat&logo=arxiv&logoColor=white)](https://put-here-your-paper.com)
 [![License](https://img.shields.io/github/license/UKPLab/ukp-project-template)](https://opensource.org/licenses/Apache-2.0)
 [![Python Versions](https://img.shields.io/badge/Python-3.9-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 
 This repository includes all necessary code and data to reproduce the experiments detailed in the paper [The Nature of NLP: Analyzing Contributions in NLP Papers](). We release the code under an __Apache 2.0__ license and the dataset under a __CC-BY-SA-4.0__ license. 
+
+This repository contains the code for training models to detect and classify contribution statements in NLP research papers and categorize them by their types (for details on these types, please consult our paper). These trained models can be applied to any NLP research paper to identify its contributions.
+
 
 Contact person: [Aniket Pramanick](mailto:aniket.pramanick@tu-darmstadt.de) 
 
@@ -20,89 +22,62 @@ Don't hesitate to send us an e-mail or report an issue if something is broken (a
 
 ## Getting Started
 
-> **DO NOT CLONE OR FORK**
+Follow the instructions below to create the Python environment for the experiments. 
 
-If you want to set up this template:
-
-1. Request a repository on UKP Lab's GitHub by following the standard procedure on the wiki. It will install the template directly. Alternatively, set it up in your personal GitHub account by clicking **[Use this template](https://github.com/rochacbruno/python-project-template/generate)**.
-2. Wait until the first run of CI finishes. Github Actions will commit to your new repo with a "✅ Ready to clone and code" message.
-3. Delete optional files: 
-    - If you don't need automatic documentation generation, you can delete folder `docs`, file `.github\workflows\docs.yml` and `mkdocs.yml`
-    - If you don't want automatic testing, you can delete folder `tests` and file `.github\workflows\tests.yml`
-4. Prepare a virtual environment:
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install .
-pip install -r requirements-dev.txt # Only needed for development
 ```
-5. Adapt anything else (for example this file) to your project. 
-
-6. Read the file [ABOUT_THIS_TEMPLATE.md](ABOUT_THIS_TEMPLATE.md)  for more information about development.
+$ conda create -n nlpcontributions pip python=3.9 
+$ conda activate nlpcontributions
+$ pip install -r requirements.txt
+```
 
 ## Usage
 
-### Using the classes
+### Dataset
 
-To import classes/methods of `arxiv_2024_nlp_contributions` from inside the package itself you can use relative imports: 
+To use the dataset, download the data from the link above and place it inside the `data` folder. 
 
-```py
-from .base import BaseClass # Notice how I omit the package name
+### Preprocess
 
-BaseClass().something()
-```
-
-To import classes/methods from outside the package (e.g. when you want to use the package in some other project) you can instead refer to the package name:
+To train the models, you will need to split the data into _train-val-test splits_. Use the following script to preprocess the data. 
 
 ```py
-from arxiv_2024_nlp_contributions import BaseClass # Notice how I omit the file name
-from arxiv_2024_nlp_contributions.subpackage import SubPackageClass # Here it's necessary because it's a subpackage
-
-BaseClass().something()
-SubPackageClass().something()
+python code/finetune_data_preparation.py
 ```
 
-### Using scripts
+### Train and Evaluate
 
-This is how you can use `arxiv_2024_nlp_contributions` from command line:
+To train the models and evaluate their performance, use the following script. 
 
-```bash
-$ python -m arxiv_2024_nlp_contributions
+```py
+python code/limit_classifier.py --model_name_or_path {local or huggingface model path}.
 ```
 
-### Expected results
+We use the following models: BERT, BiomedBERT, SciBERT, RoBERTa, and Flan-T5. 
 
-After running the experiments, you should expect the following results:
+### Inference
 
-(Feel free to describe your expected results here...)
+To run the trained model on _test_ split for inference, use the following script. 
 
-### Parameter description
+```py
+python code/inference_merged_labels.py
+```
 
-* `x, --xxxx`: This parameter does something nice
+### Analysis
 
-* ...
+We have used [Tableau for Students](https://www.tableau.com/academic/students) to analyze the data and create all the plots. However, any other visualization software could be used as well to analyze the data. 
 
-* `z, --zzzz`: This parameter does something even nicer
-
-## Development
-
-Read the FAQs in [ABOUT_THIS_TEMPLATE.md](ABOUT_THIS_TEMPLATE.md) to learn more about how this template works and where you should put your classes & methods. Make sure you've correctly installed `requirements-dev.txt` dependencies
 
 ## Cite
 
 Please use the following citation:
 
-```
-@InProceedings{smith:20xx:CONFERENCE_TITLE,
-  author    = {Smith, John},
-  title     = {My Paper Title},
-  booktitle = {Proceedings of the 20XX Conference on XXXX},
-  month     = mmm,
-  year      = {20xx},
-  address   = {Gotham City, USA},
-  publisher = {Association for XXX},
-  pages     = {XXXX--XXXX},
-  url       = {http://xxxx.xxx}
+```bibtex
+@article{pramanick2024nlpcontributions,
+  title={The Nature of NLP: Analyzing Contributions in NLP Papers},
+  author={Pramanick, Aniket and Hou, Yufang and Mohammad, Saif and Gurevych, Iryna},
+  journal={},
+  year={2024},
+  url={}
 }
 ```
 

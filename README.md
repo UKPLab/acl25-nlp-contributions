@@ -5,7 +5,7 @@
 
 This repository includes all necessary code and data to reproduce the experiments detailed in the paper [The Nature of NLP: Analyzing Contributions in NLP Papers](). We release the code under an __Apache 2.0__ license and the dataset under a __CC-BY-SA-4.0__ license. 
 
-This repository contains the code for training models to detect and classify contribution statements in NLP research papers and categorize them by their types (for details on these types, please consult our paper). These trained models can be applied to any NLP research paper to identify its contributions.
+This repository contains the code for fine-tuning pre-trained models to detect and classify contribution statements in NLP research papers and categorize them by their types (for details on these types, please consult our paper). These trained models can be applied to any NLP research paper to identify its contributions.
 
 
 Contact person: [Aniket Pramanick](mailto:aniket.pramanick@tu-darmstadt.de) 
@@ -44,9 +44,9 @@ To train the models, you will need to split the data into _train-val-test splits
 python code/finetune_data_preparation.py
 ```
 
-### Train and Evaluate
+### Fine-tune and Evaluate
 
-To train the models and evaluate their performance, use the following script. 
+To fine-tune the models and evaluate their performance, use the following script. 
 
 ```py
 python code/limit_classifier.py --model_name_or_path {local or huggingface model path}.

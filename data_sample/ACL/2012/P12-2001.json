@@ -1,0 +1,27 @@
+{
+      "id": "P12-2001",
+      "title": "Higher-order Constituent Parsing and Parser Combination",
+      "abstract": "This paper presents a higher-order model for constituent parsing aimed at utilizing more local structural context to decide the score of a grammar rule instance in a parse tree. Experiments on English and Chinese treebanks confirm its advantage over its first-order version. It achieves its best F1 scores of 91.86% and 85.58% on the two languages, respectively, and further pushes them to 92.80% and 85.60% via combination with other high-performance parsers.",
+      "url": "https://aclanthology.org/P12-2001",
+      "year": "2012",
+      "venue": "Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+      "authors": [
+            "Chen, Xiao",
+            "Kit, Chunyu"
+      ],
+      "annotations": {
+            "artifact_task": [],
+            "artifact_method": [
+                  "This paper presents a higher-order model for constituent parsing aimed at utilizing more local structural context to decide the score of a grammar rule instance in a parse tree."
+            ],
+            "knowledge_people": [],
+            "knowledge_dataset": [],
+            "knowledge_language": [],
+            "artifact_dataset": [],
+            "knowledge_task": [],
+            "knowledge_ml": [
+                  "Experiments on English and Chinese treebanks confirm its advantage over its first-order version.",
+                  "It achieves its best F1 scores of 91.86% and 85.58% on the two languages, respectively, and further pushes them to 92.80% and 85.60% via combination with other high-performance parsers."
+            ]
+      }
+}

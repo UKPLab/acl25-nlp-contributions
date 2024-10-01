@@ -1,0 +1,28 @@
+{
+      "id": "P10-1021",
+      "title": "Syntactic and Semantic Factors in Processing Difficulty: An Integrated Measure",
+      "abstract": "The analysis of reading times can provide insights into the processes that underlie language comprehension, with longer reading times indicating greater cognitive load. There is evidence that the language processor is highly predictive, such that prior context allows upcoming linguistic material to be anticipated. Previous work has investigated the contributions of semantic and syntactic contexts in isolation, essentially treating them as independent factors. In this paper we analyze reading times in terms of a single predictive measure which integrates a model of semantic composition with an incremental parser and a language model.",
+      "url": "https://aclanthology.org/P10-1021",
+      "year": "2010",
+      "venue": "Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics",
+      "authors": [
+            "Mitchell, Jeff",
+            "Lapata, Mirella",
+            "Demberg, Vera",
+            "Keller, Frank"
+      ],
+      "annotations": {
+            "artifact_task": [],
+            "artifact_method": [
+                  "In this paper we analyze reading times in terms of a single predictive measure which integrates a model of semantic composition with an incremental parser and a language model."
+            ],
+            "knowledge_people": [
+                  "The analysis of reading times can provide insights into the processes that underlie language comprehension, with longer reading times indicating greater cognitive load."
+            ],
+            "knowledge_dataset": [],
+            "knowledge_language": [],
+            "artifact_dataset": [],
+            "knowledge_task": [],
+            "knowledge_ml": []
+      }
+}

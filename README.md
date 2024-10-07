@@ -13,6 +13,7 @@ Contact person: [Aniket Pramanick](mailto:aniket.pramanick@tu-darmstadt.de)
 [UKP Lab](https://www.ukp.tu-darmstadt.de/) | [TU Darmstadt](https://www.tu-darmstadt.de/)
 
 The entire pre-processed __ACL Events__ dataset from __ACLAnthology__ will _soon_ be available on [TUdatalib]().
+Additional details about the data are available [here](https://github.com/UKPLab/arxiv-2024-nlp-contributions/blob/main/data/README.md).
 
 Don't hesitate to send us an e-mail or report an issue if something is broken (and it shouldn't be) or if you have further questions.
 

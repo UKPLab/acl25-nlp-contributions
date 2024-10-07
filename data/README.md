@@ -41,7 +41,7 @@ Furthermore, our dataset contains abstracts from 28,937 research papers from the
 
 ## Taxonomy Overview
 
-Below, we provide a concise overview of the taxonomy used to categorize the contribution statements.
+Below, we provide a concise overview of the taxonomy used to categorize the contribution statements. For details, please refer to the paper. 
 
 | Category | Description |
 | --- | --- |

@@ -30,7 +30,7 @@ Furthermore, our dataset contains abstracts from 28,937 research papers from the
             "knowledge_language": [],
             "artifact_dataset": [],
             "knowledge_task": [],
-            "knowledge_ml": [
+            "knowledge_method": [
                   "While context is clearly an important feature, this paper focuses on non-contextual features, which may play a key role for unknown words that occur only once and hence have limited context.",
                   "The classifier improves on baseline semantic categorization performance for adjectives and verbs, but not for nouns."
             ]
@@ -38,3 +38,18 @@ Furthermore, our dataset contains abstracts from 28,937 research papers from the
 }
 
 ```
+
+## Taxonomy Overview
+
+Below, we provide a concise overview of the taxonomy used to categorize the contribution statements.
+
+| Category | Description |
+| --- | --- |
+| `knowledge-dataset` | Describes new knowledge about datasets, such as their new properties or characteristics. |
+| `knowledge-language` | Presents new knowledge about language, such as a new property or characteristic of language. |
+| `knowledge-method` | Describes new knowledge or analysis about NLP models or methods (which predominantly draw from Machine Learning). |
+| `knowledge-people` | Presents new knowledge about people, humankind, society, or human civilization. |
+| `knowledge-task` | Describes new knowledge about NLP tasks. |
+| `artifact-dataset` | Introduces a new NLP dataset (i.e., textual resources such as corpora or lexicon). |
+| `artifact-method` | Introduces or proposes a new or novel NLP method or model (primarily to solve NLP task(s)). |
+| `artifact-task` | Introduces or proposes a new or novel NLP task (i.e., well-defined NLP problem). |

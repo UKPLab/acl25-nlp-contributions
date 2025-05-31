@@ -74,12 +74,12 @@ We have used [Tableau for Students](https://www.tableau.com/academic/students) t
 Please use the following citation:
 
 ```bibtex
-@article{pramanick2024nlpcontributions,
-  title={The Nature of NLP: Analyzing Contributions in NLP Papers},
-  author={Pramanick, Aniket and Hou, Yufang and Mohammad, Saif and Gurevych, Iryna},
-  journal={arXiv preprint arXiv:2409.19505},
-  year={2024},
-  url={https://arxiv.org/abs/2409.19505}
+@inproceedings{pramanick-etal-2025-nlpcontributions,
+    title={The Nature of NLP: Analyzing Contributions in NLP Papers},
+    author={Pramanick, Aniket and Hou, Yufang and Mohammad, Saif and Gurevych, Iryna},
+    booktitle={The 63rd Annual Meeting of the Association for Computational Linguistics},
+    year={2025},
+    url={https://arxiv.org/abs/2409.19505}    
 }
 ```
 

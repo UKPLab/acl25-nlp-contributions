@@ -204,6 +204,150 @@
     </section>
     <!-- End paper abstract -->
 
+    <section class="section hero">
+        <div class="container is-max-desktop">
+            <div class="column is-centered has-text-centered">
+                <div class="column is-five-sixths">
+                    <h2 class="title is-3" style="color:#184A8C">Why this paper matters</h2>
+                    <h2 class="content has-text-justified">NLP is maturing at break-neck speed, yet we still debate what
+                        <i>counts</i> as an NLP paper. We tackle that head-on with a data-driven approach:
+                    </h2>
+
+                    <h2 class="content has-text-justified">
+                        <ol>
+                            <li><b>Define</b> a contribution taxonomy broad enough for all of NLP yet precise enough for
+                                automatic labeling.</li>
+                            <li><b>Build</b> the first gold dataset that tags sentences, not whole papers.</li>
+                            <li><b>Automate</b> contribution mining and push it to a historical corpus.</li>
+                            <li><b>Analyze</b> 50 years of ACL output to surface field-level trends we’ve only
+                                anecdotally sensed.</li>
+                        </ol>
+                    </h2>
+
+                    <h2 class="content has-text-justified">
+                        For anyone working on scientometrics, survey automation, benchmarking, or simply curious about
+                        our field’s trajectory, this is gold.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Taxonomy Summary -->
+    <section class="section hero">
+        <div class="container is-max-desktop">
+            <div class="column is-centered has-text-centered">
+                <div class="column is-five-sixths">
+                    <h2 class="title is-3" style="color:#007C8F">The Taxonomy in 60s</h2>
+                    <img src="static/images/taxonomy.png" width="50%" />
+
+                    <h2 class="content has-text-justified">
+                        <table>
+                            <tr>
+                                <th>Artifact (creates something)</th>
+                                <th>Knowledge (investigates something)</th>
+                            </tr>
+                            <tr>
+                                <td><b>a-method</b> – new model / algorithm</td>
+                                <td><b>k-method</b> – insights about models</td>
+                            </tr>
+                            <tr>
+                                <td><b>a-dataset</b> – new corpus / lexicon</td>
+                                <td><b>k-dataset</b> – insights about datasets</td>
+                            </tr>
+                            <tr>
+                                <td><b>a-task</b> – new problem definition</td>
+                                <td><b>k-task</b> – insights about tasks</td>
+                            </tr>
+                            <tr>
+                                <td>(—)</td>
+                                <td><b>k-language</b> – linguistic discovery</td>
+                            </tr>
+                            <tr>
+                                <td>(—)</td>
+                                <td><b>k-people</b> – human / societal insight</td>
+                            </tr>
+                        </table>
+                    </h2>
+
+                    <h2 class="content has-text-justified">
+                        A single sentence can carry multiple labels (≈ 58 % actually do), capturing the multifaceted
+                        nature of modern papers.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hero">
+        <div class="container is-max-desktop">
+            <div class="column is-centered has-text-centered">
+                <div class="column is-five-sixths">
+                    <h2 class="title is-3" style="color: #008E3B;">Building NLPContributions & Scaling Up</h2>
+                    <h2 class="content is-centered has-text-justified">
+                        <ul>
+                            <li><b>1,995 abstracts</b> (1974-2024) → <b>5,890</b> contribution sentences.</li>
+                            <li>Two expert annotators, <b>κ ≈ 0.71</b> (solid for eight labels).</li>
+                            <li>Public release: data + Label-Studio config + guidelines.</li>
+                        </ul>
+                        <br>
+                        <p>
+                            Fine-tuned <b>SciBERT</b> (macro-F1 ≈ 0.80) → tag <b>28,937</b> ACL papers.
+                            <br>
+                            Now we can ask field-level questions without months of manual coding.
+                        </p>
+                    </h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hero">
+        <div class="container is-max-desktop">
+            <div class="column is-centered has-text-centered">
+                <div class="column is-five-sixths">
+                    <h2 class="title is-3" style="color: #508492;">Open questions ripe for follow-up</h2>
+                    <h2 class="content is-centered has-text-justified">
+                        <ul>
+                            <li><b>Beyond ACL:</b> does the arXiv NLP flood follow the same patterns?</li>
+                            <li><b>Full-paper granularity:</b> how do contributions differ between abstract and body?
+                            </li>
+                            <li><b>Cross-discipline transfer:</b> can the taxonomy bootstrap similar studies in CV or
+                                IR?</li>
+                        </ul>
+
+                    </h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hero">
+        <div class="container is-max-desktop">
+            <div class="column is-centered has-text-centered">
+                <div class="column is-five-sixths">
+                    <h2 class="title is-3" style="color: #2E2E2E;">Takeaway</h2>
+                    <h2 class="content is-centered has-text-justified">
+                        The <i>Nature of NLP</i> seeds a new branch of meta-science for our field: <b>evidence-based
+                            self-reflection</b>. With the dataset and code released, the barrier to entry is minimal —
+                        the next
+                        wave of analyses is yours to run.
+
+                        <blockquote class="blockquote-tldr">
+                            <i>“Individual NLP papers contribute in more ways than ever before.”</i>
+                            <br>
+                            Let’s keep that diversity alive, measure it, and learn from it.
+                        </blockquote>
+                    </h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Image carousel -->
     <!-- <section class="hero is-small">
@@ -211,29 +355,29 @@
             <div class="container">
                 <div id="results-carousel" class="carousel results-carousel">
                     <div class="item"> -->
-                        <!-- Your image here -->
-                        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
+    <!-- Your image here -->
+    <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
                         <h2 class="subtitle has-text-centered">
                             First image description.
                         </h2>
                     </div>
                     <div class="item"> -->
-                        <!-- Your image here -->
-                        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
+    <!-- Your image here -->
+    <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
                         <h2 class="subtitle has-text-centered">
                             Second image description.
                         </h2>
                     </div>
                     <div class="item"> -->
-                        <!-- Your image here -->
-                        <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
+    <!-- Your image here -->
+    <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
                         <h2 class="subtitle has-text-centered">
                             Third image description.
                         </h2>
                     </div>
                     <div class="item"> -->
-                        <!-- Your image here -->
-                        <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
+    <!-- Your image here -->
+    <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
                         <h2 class="subtitle has-text-centered">
                             Fourth image description.
                         </h2>
@@ -251,14 +395,14 @@
     <!-- <section class="hero is-small is-light">
         <div class="hero-body">
             <div class="container"> -->
-                <!-- Paper video. -->
-                <!-- <h2 class="title is-3">Video Presentation</h2>
+    <!-- Paper video. -->
+    <!-- <h2 class="title is-3">Video Presentation</h2>
                 <div class="columns is-centered has-text-centered">
                     <div class="column is-four-fifths">
 
                         <div class="publication-video"> -->
-                            <!-- Youtube embed code here -->
-                            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0"
+    <!-- Youtube embed code here -->
+    <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0"
                                 allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -277,20 +421,20 @@
                 <div id="results-carousel" class="carousel results-carousel">
                     <div class="item item-video1">
                         <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
-                            <!-- Your video file here -->
-                            <!-- <source src="static/videos/carousel1.mp4" type="video/mp4">
+    <!-- Your video file here -->
+    <!-- <source src="static/videos/carousel1.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="item item-video2">
                         <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
-                            <!-- Your video file here -->
-                            <!-- <source src="static/videos/carousel2.mp4" type="video/mp4">
+    <!-- Your video file here -->
+    <!-- <source src="static/videos/carousel2.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="item item-video3">
                         <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
-                            <!-- Your video file here -->
-                            <!-- <source src="static/videos/carousel3.mp4" type="video/mp4">
+    <!-- Your video file here -->
+    <!-- <source src="static/videos/carousel3.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>

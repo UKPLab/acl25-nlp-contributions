@@ -156,6 +156,10 @@ body {
 }
 
 li {
-    display: list-item;
-    list-style-type: disc;
- }
+  display: list-item;
+  list-style-type: disc;
+}
+
+.is-numbered {
+  list-style-type: decimal;
+}

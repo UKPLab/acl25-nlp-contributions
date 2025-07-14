@@ -163,3 +163,18 @@ li {
 .is-numbered {
   list-style-type: decimal;
 }
+
+.image-row {
+      display: flex;
+      align-items: center;    /* vertically center them on their midlines */
+      gap: 1rem;  
+      float: left;
+      padding: 5px;
+
+    }
+
+.image-row img {
+      display: block;         /* remove any inline whitespace artifacts */
+      max-width: 100%;        /* responsive sizing */
+      height: auto;
+    }

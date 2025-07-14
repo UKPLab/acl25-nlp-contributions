@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>The Nature of NLP: Analyzing Contributions in NLP Papers</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h3 class="title is-1 publication-title" style="white-space: nowrap; color: #333333">The Nature
+                            of NLP: Analyzing Contributions in NLP Papers</h3>
+                        <div class="is-size-5 publication-authors">
+                            <!-- Paper authors -->
+                            <span class="author-block">
+                                <a href="https://aniket-pramanick.github.io/" target="_blank">Aniket
+                                    Pramanick</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://yufanghou.github.io/" target="_blank">Yufang Hou</a><sup>2,
+                                    3</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://saifmohammad.com/" target="_blank">Saif M. Mohammad</a><sup>4</sup>,
+                                and</span>
+                            <span class="author-block">
+                                <a href="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp"
+                                    target="_blank">Iryna Gurevych</a><sup>1</sup>
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block" style="font-size: 18px; color: #001844;">
+                                <sup>1</sup>UKP Lab, Technische Universität Darmstadt</span><br>
+                            <span class="author-block" style="font-size: 18px; color: #001844;">
+                                <sup>2</sup>IT:U - Interdisciplinary Transformation University</span><br>
+                            <span class="author-block" style="font-size: 18px; color: #001844;">
+                                <sup>3</sup>IBM Research Europe</span><br>
+                            <span class="author-block" style="font-size: 18px; color: #001844;">
+                                <sup>4</sup>National Research Council Canada</span><br>
+                            <span class="author-block" style="color: #555555;">
+                                The 63rd Annual Meeting of the Association for Computational Linguistics (ACL
+                                2025)</span>
+                            </span>
+                            <!-- <span class="author-block">Institution Name<br>Conference name and year</span> -->
+                            <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- Arxiv PDF link -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/2409.19505" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+
+                                <!-- Supplementary PDF link -->
+                                <!-- <span class="link-block">
+                                    <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Supplementary</span>
+                                    </a>
+                                </span> -->
+
+                                <!-- Github link -->
+                                <span class="link-block">
+                                    <a href="https://github.com/UKPLab/acl25-nlp-contributions" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <!-- ArXiv abstract Link -->
+                                <!-- <span class="link-block">
+                                    <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Teaser video-->
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <blockquote class="blockquote-tldr">
+                    <div class="tldr-header">TL;DR</div>
+                    <ul>
+                        <li>“<strong>New 8-label taxonomy</strong> for what counts as a <i>contribution</i> in NLP
+                            (datasets, methods,
+                            tasks ↔ knowledge about each, plus language & people).”</li>
+                        <li>“<strong>NLPContributions:</strong> 1,995 abstracts manually annotated for those labels.”
+                        </li>
+                        <li>“<strong>SciBERT-based classifier</strong> that scales the taxonomy to ~29k ACL-Anthology
+                            papers (1974–Feb
+                            2024).”</li>
+                        <li>“<strong>Findings:</strong> early NLP = language & people-centric; 1990s–2010s =
+                            method/task/dataset boom;
+                            post-2020 = renaissance of human & linguistic studies alongside LLM frenzy.”</li>
+                        <li>“<strong>All code + data openly released</strong> — a playground for meta-research.”</li>
+                    </ul>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <!-- End teaser video -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Natural Language Processing (NLP) is an established and dynamic field. Despite this, what
+                            constitutes NLP research remains debated. In this work, we address the question by
+                            quantitatively examining NLP research papers. We propose a taxonomy of research
+                            contributions and introduce NLPContributions, a dataset of nearly 2k
+                            NLP research paper abstracts, carefully annotated to identify scientific contributions
+                            and classify their types according to this taxonomy. We also introduce a novel
+                            task of automatically identifying contribution statements and classifying their types from
+                            research papers. We present experimental results for this task and apply our model to
+                            ∼29k NLP research papers to analyze their contributions, aiding in the understanding of
+                            the nature of NLP research. We show that NLP research has taken a winding path — with the
+                            focus on language and human-centric studies being prominent in the 1970s and 80s, tapering
+                            off in the 1990s and 2000s, and starting to rise again since the late 2010s. Alongside this
+                            revival, we observe a steady rise in dataset and methodological contributions since the
+                            1990s, such that today, on average, individual NLP papers contribute in more ways than
+                            ever before. Our dataset and analyses offer a powerful lens for tracing research trends and
+                            focus on language and human-centric studies being prominent in the 1970s and 80s, tapering
+                            off in the 1990s and 2000s, and starting to rise again since the late 2010s. Alongside this
+                            revival, we observe a steady rise in dataset and methodological contributions since the
+                            1990s, such that today, on average, individual NLP papers contribute in more ways than
+                            ever before. Our dataset and analyses offer a powerful lens for tracing research trends and
+                            offer potential for generating informed, data-driven literature surveys.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End paper abstract -->
+
+
+    <!-- Image carousel -->
+    <!-- <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item"> -->
+                        <!-- Your image here -->
+                        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
+                        <h2 class="subtitle has-text-centered">
+                            First image description.
+                        </h2>
+                    </div>
+                    <div class="item"> -->
+                        <!-- Your image here -->
+                        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
+                        <h2 class="subtitle has-text-centered">
+                            Second image description.
+                        </h2>
+                    </div>
+                    <div class="item"> -->
+                        <!-- Your image here -->
+                        <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
+                        <h2 class="subtitle has-text-centered">
+                            Third image description.
+                        </h2>
+                    </div>
+                    <div class="item"> -->
+                        <!-- Your image here -->
+                        <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
+                        <h2 class="subtitle has-text-centered">
+                            Fourth image description.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End image carousel -->
+
+
+
+
+    <!-- Youtube video -->
+    <!-- <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container"> -->
+                <!-- Paper video. -->
+                <!-- <h2 class="title is-3">Video Presentation</h2>
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+
+                        <div class="publication-video"> -->
+                            <!-- Youtube embed code here -->
+                            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End youtube video -->
+
+
+    <!-- Video carousel -->
+    <!-- <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title is-3">Another Carousel</h2>
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-video1">
+                        <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+                            <!-- Your video file here -->
+                            <!-- <source src="static/videos/carousel1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-video2">
+                        <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+                            <!-- Your video file here -->
+                            <!-- <source src="static/videos/carousel2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-video3">
+                        <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+                            <!-- Your video file here -->
+                            <!-- <source src="static/videos/carousel3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End video carousel -->
+
+
+
+
+
+
+    <!-- Paper poster -->
+    <!-- <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title">Poster</h2>
+
+                <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+                </iframe>
+
+            </div>
+        </div>
+    </section> -->
+    <!--End paper poster -->
+
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@inproceedings{pramanick-etal-2025-nlpcontributions,
+                title={The Nature of NLP: Analyzing Contributions in NLP Papers},
+                author={Pramanick, Aniket and Hou, Yufang and Mohammad, Saif and Gurevych, Iryna},
+                booktitle={The 63rd Annual Meeting of the Association for Computational Linguistics},
+                year={2025},
+                url={https://arxiv.org/abs/2409.19505}    
+            }</code></pre>
+        </div>
+    </section>
+    <!--End BibTex citation -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+
+                        <p>
+                            This page was built using the <a
+                                href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+</body>
+
+</html>

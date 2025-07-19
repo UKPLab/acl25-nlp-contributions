@@ -39,6 +39,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
     <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="static/js/bulma-carousel.min.js"></script>
     <script src="static/js/bulma-slider.min.js"></script>
     <script src="static/js/index.js"></script>
@@ -51,7 +52,8 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h3 class="title is-1 publication-title" style="align-self: center; font-size: 35px; color: #333333">The Nature
+                        <h3 class="title is-1 publication-title"
+                            style="align-self: center; font-size: 35px; color: #333333">The Nature
                             of NLP: Analyzing Contributions in NLP Papers</h3>
                         <div class="is-size-5 publication-authors">
                             <!-- Paper authors -->
@@ -119,6 +121,17 @@
                                             <i class="fab fa-github"></i>
                                         </span>
                                         <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <!-- Dataset link -->
+                                <span class="link-block">
+                                    <a href="https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/4678"
+                                        target="_blank" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fa fa-database"></i>
+                                        </span>
+                                        <span>Dataset</span>
                                     </a>
                                 </span>
 
@@ -239,11 +252,91 @@
             <div class="column is-centered has-text-centered">
                 <div class="column is-five-sixths">
                     <h2 class="title is-3" style="color:#007C8F">The Taxonomy in 60s</h2>
-                    <img src="static/images/taxonomy.png" alt="Taxonomy Overview" width="50%" style="margin-top: 20px; margin-bottom: 50px"/>
+                    <img src="static/images/taxonomy.png" alt="Taxonomy Overview" width="50%"
+                        style="margin-top: 20px; margin-bottom: 50px" />
 
                     <h2 class="content has-text-justified">
-                        <table>
+                        <table style="font-size: small;">
                             <tr>
+                                <th>Type</th>
+                                <th style="width: 90px;">Sub-type</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <th rowspan="5">Knowledge</th>
+                                <td>k-dataset</td>
+                                <td>Describes new knowledge about datasets, such as their new properties or
+                                    characteristics.</td>
+                                <td>"Furthermore, our thorough analysis demonstrates the average distance between aspect
+                                    and
+                                    opinion words are shortened by at least 19% on the standard SemEval Restaurant14
+                                    dataset." - <cite><a href="https://arxiv.org/abs/2109.08382", target="_blank">Zhou et al., 2021</a></cite></td>
+                            </tr>
+                            <tr>
+                                <td>k-language</td>
+                                <td>Presents new knowledge about language, such as a new
+                                    property or characteristic of language.</td>
+                                <td>"In modern Chinese articles or conversations, it is very popular to involve a few
+                                    English
+                                    words, especially in emails and Internet literature." - <cite><a href="https://aclanthology.org/D12-1126/" target="_blank">Zhao et al.,
+                                        2012</a></cite></td>
+                            </tr>
+                            <tr>
+                                <td>k-method</td>
+                                <td>Describes new knowledge or analysis about NLP models or
+                                    methods (which predominantly draw from Machine Learning).</td>
+                                <td>“Different generative processes identify specific failure modes of the underlying
+                                    model.”
+                                    – <cite><a href="https://arxiv.org/abs/2210.08444" target="_blank">Deng et al. (2022)</a></cite></td>
+                            </tr>
+                            <tr>
+                                <td>k-people</td>
+                                <td>Presents new knowledge about people, humankind, society, or
+                                    human civilization.</td>
+                                <td>“Combating the outcomes of this infodemic is not only a question of identifying
+                                    false claims,
+                                    but also reasoning about the decisions individuals make.” – <cite><a href="https://arxiv.org/abs/2205.01817" target="_blank">Pacheco et al.
+                                        (2022)</a></cite></td>
+                            </tr>
+                            <tr>
+                                <td>k-task</td>
+                                <td>Describes new knowledge about NLP tasks.</td>
+                                <td>“We show that these bilingual features outperform the monolingual features used in
+                                    prior
+                                    work for the task of classifying translation direction.” – <cite><a href="https://aclanthology.org/D14-1018/" target="_blank">Eetemadi and
+                                        Toutanova (2014)</a></cite></td>
+                            </tr>
+
+                            <tr>
+                                <th rowspan="3">Artifact</th>
+                                <td>a-dataset</td>
+                                <td>Introduces a new NLP dataset (i.e., textual resources such as
+                                    corpora or lexicon).</td>
+                                <td>“We present a new corpus of Weibo messages annotated for both name and nominal
+                                    mentions.”
+                                    – <cite><a href="https://aclanthology.org/D15-1064/" target="_blank">Peng and Dredze (2015)</a></cite></td>
+                            </tr>
+                            <tr>
+                                <td>a-method</td>
+                                <td>Introduces or proposes a new or novel NLP method or model
+                                    (primarily to solve NLP task(s))</td>
+                                <td>“The paper also describes a novel method, EXEMPLAR, which adapts ideas from SRL to
+                                    less costly NLP machinery, resulting in substantial gains both in efficiency and
+                                    effectiveness,
+                                    over binary and n-ary relation extraction tasks.” – <cite><a href="https://aclanthology.org/D13-1043/" target="_blank">Mesquita et al.
+                                        (2013)</a></cite></td>
+                            </tr>
+                            <tr>
+                                <td>a-task</td>
+                                <td>Introduces or proposes a new or novel NLP task (i.e., well-defined NLP problem).</td>
+                                <td>“We formulate a task that represents a hybrid of slot-filling information extraction
+                                    and named
+                                    entity recognition and annotate data from four different forums.” – <cite><a href="https://arxiv.org/abs/1708.09609" target="_blank">Durrett et
+                                        al. (2017)</a></cite></td>
+                            </tr>
+                            <tr></tr>
+                            <!-- <tr>
                                 <th>Artifact (creates something)</th>
                                 <th>Knowledge (investigates something)</th>
                             </tr>
@@ -266,7 +359,7 @@
                             <tr>
                                 <td>(—)</td>
                                 <td><b>k-people</b> – human / societal insight</td>
-                            </tr>
+                            </tr> -->
                         </table>
                     </h2>
 
@@ -311,33 +404,44 @@
                     <h2 class="content is-centered has-text-justified">
                         <h3 style="text-align: left; font-weight: bold; font-size: 20px;">1. The long arc of NLP</h3>
                         <h3 class="content is-centered has-text-justified">
-                            <img src="static/images/temporal_k_cumulative_label_dist.png" alt="Knowledge Temporal Label Distribution" width="50%" class="image-row"/>
-                            <img src="static/images/temporal_a_cumulative_label_dist.png" alt="Artifact Temporal Label Distribution" width="50%" class="image-row"/>
+                            <img src="static/images/temporal_k_cumulative_label_dist.png"
+                                alt="Knowledge Temporal Label Distribution" width="50%" class="image-row" />
+                            <img src="static/images/temporal_a_cumulative_label_dist.png"
+                                alt="Artifact Temporal Label Distribution" width="50%" class="image-row" />
                             <!-- <img src="static/images/temporal_k_cumulative_label_dist.png" alt="Knowledge Temporal Label Distribution" width="50%" style="float: left; padding: 5px;"/>
                             <img src="static/images/temporal_a_cumulative_label_dist.png" alt="Artifact Temporal Label Distribution" width="50%" style="float: left; padding: 5px;"/> -->
                             <ul>
-                                <li><b>1970s-80s:</b> heavy on language & people studies (think discourse, dialogue).</li>
-                                <li><b>1990s-2000s:</b> statistical turn → datasets & methods skyrocket; human-centric work fades.</li>
-                                <li><b>Late 2010s-...:</b> LLM era revives interest in sociolinguistics & bias → k-language and k-people trend up again, but methods still dominate.</li>
+                                <li><b>1970s-80s:</b> heavy on language & people studies (think discourse, dialogue).
+                                </li>
+                                <li><b>1990s-2000s:</b> statistical turn → datasets & methods skyrocket; human-centric
+                                    work fades.</li>
+                                <li><b>Late 2010s-...:</b> LLM era revives interest in sociolinguistics & bias →
+                                    k-language and k-people trend up again, but methods still dominate.</li>
                             </ul>
                         </h3>
-                        
-                        <h3 style="text-align: left; font-weight: bold; font-size: 20px;">2. Venue personalities (or lack thereof)</h3>
+
+                        <h3 style="text-align: left; font-weight: bold; font-size: 20px;">2. Venue personalities (or
+                            lack thereof)</h3>
                         <h3 class="content is-centered has-text-justified">
-                            <img src="static/images/conf_convergence.png" alt="Venue Personalities" width="45%" style="display: block; margin: 2rem auto; height: auto;"/>
+                            <img src="static/images/conf_convergence.png" alt="Venue Personalities" width="45%"
+                                style="display: block; margin: 2rem auto; height: auto;" />
                             <ul>
                                 <li>Classic ACL/EMNLP/NAACL now share nearly identical contribution profiles.</li>
-                                <li>Computational Linguistics (journal) keeps a distinctive linguistic/human flavor.</li>
-                                <li>Newcomers (Findings, AACL) mirror ACL from day 1 — fast institutional convergence.</li>
+                                <li>Computational Linguistics (journal) keeps a distinctive linguistic/human flavor.
+                                </li>
+                                <li>Newcomers (Findings, AACL) mirror ACL from day 1 — fast institutional convergence.
+                                </li>
                             </ul>
                         </h3>
-                        
+
                         <h3 style="text-align: left; font-weight: bold; font-size: 20px;">3. Citations & incentives</h3>
                         <h3 class="content is-centered has-text-justified">
                             <ul>
                                 <li>Methodological papers get more citations, dataset papers less so.</li>
-                                <li>k-language and k-people papers are cited more than a-methods, but less than a-datasets.</li>
-                                <li>k-dataset and k-task papers are the least cited, but still important for field growth.</li>
+                                <li>k-language and k-people papers are cited more than a-methods, but less than
+                                    a-datasets.</li>
+                                <li>k-dataset and k-task papers are the least cited, but still important for field
+                                    growth.</li>
                             </ul>
                         </h3>
 

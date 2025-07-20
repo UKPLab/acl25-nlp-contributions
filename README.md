@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/github/license/UKPLab/ukp-project-template)](https://opensource.org/licenses/Apache-2.0)
 [![Python Versions](https://img.shields.io/badge/Python-3.9-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 
+You can find the project page for this work at the following [link](https://ukplab.github.io/acl25-nlp-contributions/).
+
 This repository includes all necessary code and data to reproduce the experiments detailed in the paper [The Nature of NLP: Analyzing Contributions in NLP Papers](https://arxiv.org/pdf/2409.19505). We release the code under an __Apache 2.0__ license and the dataset under a __CC-BY-SA-4.0__ license. 
 
 This repository contains the code for fine-tuning pre-trained models to detect and classify contribution statements in NLP research papers and categorize them by their types (for details on these types, please consult our paper). These trained models can be applied to any NLP research paper to identify its contributions.
